@@ -19,6 +19,7 @@ export interface IBike {
 })
 
 export class CartComponent implements OnInit {
+
   bikes: Array<any>;
 
   constructor(
@@ -53,29 +54,29 @@ export class CartComponent implements OnInit {
     switch (item) {
       case 'bikeOne':
         this.bikes.unshift({
-          'id': 1,
-          'image:': 'assets/bike1.jpeg',
-          'quantitiy:': 1,
-          'price:': 5000,
-          'description:': 'Bike Model 1'
+          id: 1,
+          image: 'assets/bike1.jpeg',
+          quantitiy: 1,
+          price: 5000,
+          description: 'Bike Model 1'
         });
         break;
         case 'bikeTwo':
         this.bikes.unshift({
-          'id': 2,
-          'image:': '../../assets/bike2.jpeg',
-          'quantitiy:': 1,
-          'price:': 4000,
-          'description:': 'Bike Model 2'
+          id: 2,
+          image: '../../assets/bike2.jpeg',
+          quantity: 1,
+          price: 4000,
+          description: 'Bike Model 2'
         });
         break;
         case 'bikeThree':
         this.bikes.unshift({
-          'id': 3,
-          'image:': 'assets/bike3.jpeg',
-          'quantitiy:': 1,
-          'price:': 3000,
-          'description:': 'Bike Model 3'
+          id: 3,
+          image: 'assets/bike3.jpeg',
+          quantity: 1,
+          price: 3000,
+          description: 'Bike Model 3'
         });
         break;
     }
